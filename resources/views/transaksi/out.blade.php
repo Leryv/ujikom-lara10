@@ -10,14 +10,14 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <h5 class="text-gray-500 dark:text-gray-400 m-5">
-                <a href="">Master Barang</a> /
-                <a href="{{ route('barang') }}">Index</a>
+                <a href="">Transaksi</a> /
+                <a href="{{ route('barang') }}">Barang Masuk</a>
             </h5>
             <div
                 class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg"
             >
                 <div class="flex justify-center">
-                    <div class="min-w-full flex items-center p-6">
+                    <div class="min-w-full grid gap-4 items-center p-6">
                         <table
                             class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
                         >
@@ -26,15 +26,20 @@
                             >
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
-                                        Kode Barang
+                                        Referensi
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Nama Barang
+                                        Supplier
                                     </th>
-                                    <th scope="col" class="px-6 py-3">Brand</th>
-                                    <th scope="col" class="px-6 py-3">UOM</th>
-                                    <th scope="col" class="px-6 py-3">Price</th>
-                                    <th scope="col" class="px-6 py-3">Stock</th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Jumlah Permintaan
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Tanggal
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Status
+                                    </th>
                                     <th scope="col" class="px-6 py-3">
                                         Option
                                     </th>
@@ -48,13 +53,14 @@
                                         scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                     >
-                                        KTG/20220403/001
+                                        REQ/20230214/001
                                     </th>
-                                    <td class="px-6 py-4">Silver</td>
-                                    <td class="px-6 py-4">LCD 14 INCH</td>
-                                    <td class="px-6 py-4">Samsung</td>
-                                    <td class="px-6 py-4">Unit</td>
-                                    <td class="px-6 py-4">Rp. 1.500.000</td>
+                                    <td class="px-6 py-4">Kawasaki</td>
+                                    <td class="px-6 py-4">5</td>
+                                    <td class="px-6 py-4">
+                                        2023-02-14 04:08:39
+                                    </td>
+                                    <td class="px-6 py-4">200000</td>
                                     <td
                                         class="px-6 py-4 flex justify-center items-center"
                                     >

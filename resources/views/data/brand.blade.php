@@ -7,13 +7,13 @@
         </h2>
     </x-slot>
 
-    <div class="py-12 text-base">
+    <div class="p-12 text-base">
         <div class="min-w-full min-h-full mx-auto sm:px-6 lg:px-8">
             <h5 class="text-gray-500 dark:text-gray-400 m-5 flex px-12">
                 <a href="">Master Data</a> /
                 <a href="{{ route('brand') }}">Edit Brand</a>
             </h5>
-            <div class="flex gap-5">
+            <div class="flex gap-10">
                 <div
                     class="bg-white dark:bg-gray-800 overflow-hidden sm:rounded-lg w-1/3 flex justify-center items-center"
                 >

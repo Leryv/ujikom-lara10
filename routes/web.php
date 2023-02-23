@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\BarangController;
-use App\Http\Controllers\MasterDataController;
-use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\MasterDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,8 +32,8 @@ Route::prefix('master-data')->group(function () {
     Route::get('uom', [MasterDataController::class, 'uom'])->name('uom');
 });
 Route::prefix('transaksi')->group(function () {
-    Route::get('in', [TransaksiController::class, 'in'])->name('in');
-    Route::get('out', [TransaksiController::class, 'out'])->name('out');
+    Route::get('masuk', [TransaksiController::class, 'in'])->name('transaksi.masuk');
+    Route::get('keluar', [TransaksiController::class, 'out'])->name('transaksi.keluar');
 });
 
 Route::get('/dashboard', function () {
