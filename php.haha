@@ -1,0 +1,42 @@
+Category::create([
+    "no_reg"    =>  "CTG/20230821/001",
+    "name"      =>  "Spare Part"
+])
+Category::create([
+    "no_reg"    =>  "CTG/20230821/002",
+    "name"      =>  "Office"
+])
+
+$category = Category::all()
+
+Brand::create([
+    "no_reg"    =>  "BRD/20230821/001",
+    "name"      =>  "Samsung"
+])
+Brand::create([
+    "no_reg"    =>  "BRD/20230821/002",
+    "name"      =>  "LG"
+])
+$brand = Brand::all()
+$brand = Brand::first()
+
+Satuan::create([
+    "no_reg"    =>  "STN/20230821/001",
+    "name"      =>  "Unit"
+])
+Satuan::create([
+    "no_reg"    =>  "STN/20230821/002",
+    "name"      =>  "Sekotak"
+])
+$satuan = Satuan::all()
+
+Barang::create([
+    "nama_barang"    =>  "Motor Kawasaki",
+    "brand_id"      =>  1,
+    "category_id"       => 2,
+    "satuan_id"     =>  1,
+    "no_reg"    =>  "BRG/20230821/001",
+    "quantity"      => 1,
+    "harga"      =>  "100000"
+])
+

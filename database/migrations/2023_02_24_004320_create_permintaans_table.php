@@ -10,10 +10,13 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('permintaans', function (Blueprint $table) {
             $table->id();
-            $table->string('no_reg', 20)->nullable()->default('text');
-            $table->string('name', 20)->nullable()->default('text');
+            $table->foreignId('barang_id');
+            $table->string('kode_permintaan');
+            $table->string('jumlah');
+            $table->string('total');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -23,6 +26,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('permintaans');
     }
 };
